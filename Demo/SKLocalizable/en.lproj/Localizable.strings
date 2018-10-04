@@ -1,0 +1,57 @@
+/*
+ * 1. Group logic blocks to sections. Ex: Enums, Errors, Screens, etc
+ *
+ * 2. Section name format:
+ *      // ======
+ *      // 'MARK: - Section Name
+ *      // ======
+ *
+ * 3. Separate subsections using 2 newlines and MARK
+ *
+ * 4. Lines format:
+ *      /*  *'/ - comment about string
+ *      "Key" = "Value";
+ *
+ *      Optional: 'Key' should contain name of screen and identifier (any number of words), separated with "." symbol
+ *
+ * 5. Parameters in strings should be named using format:
+ *      $(ParameterNameKey) - it will be automatically replaced with value from passed dict while localization
+ *
+ * 6. Localize plural numbers in Localizable.stringsdict
+ *      How to use plural localization - https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPInternational/StringsdictFileFormat/StringsdictFileFormat.html
+ *      Plural rules - http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html
+ */
+
+// ======
+// 'MARK: - Demo screen
+// ======
+
+
+// MARK - Language Buttons
+
+/* Button, that switches to English language */
+"DemoVC.LanguageButton.English" = "English";
+
+/* Button, that switches to Russian language */
+"DemoVC.LanguageButton.Russian" = "Русский";
+
+
+// MARK - UI Components
+
+/* Label, whose text value is set in the code */
+"DemoVC.CodeLabel.Text" = "Label - Code";
+
+/* Label, whose text value is set in the IB file */
+"DemoVC.IBLabel.Text" = "Label - Storyboard";
+
+/* Button, whose title value is set in the IB file */
+"DemoVC.Button.Title" = "Button - Storyboard";
+
+/* TextField, whose placeholder value is set in the IB file */
+"DemoVC.TextField.Placeholder" = "TextField - Storyboard - Placeholder";
+
+/* TextField, whose text value is set in the code */
+"DemoVC.TextField.Text" = "TextField - Code - Text";
+
+
+

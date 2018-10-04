@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B8h-aG-Q8r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="OHf-RL-x4U">
+            <objects>
+                <viewController id="B8h-aG-Q8r" customClass="ViewController" customModule="SKLocalizable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="idp-2A-Lvh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cUp-yF-5UC" userLabel="languageButtons">
+                                <rect key="frame" x="0.0" y="36" width="375" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CN-QR-MTF">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="DemoVC.LanguageButton.English"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeLanguage:" destination="B8h-aG-Q8r" eventType="touchUpInside" id="z9o-kf-BFl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIN-RL-ceq">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="DemoVC.LanguageButton.Russian"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="changeLanguage:" destination="B8h-aG-Q8r" eventType="touchUpInside" id="wZO-Qf-5fj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="CfG-Xh-dkd"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d1T-tR-9uw" userLabel="separator">
+                                <rect key="frame" x="0.0" y="86" width="375" height="1"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Jzl-Sm-smu"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="uXE-fE-rvz" userLabel="uiComponents">
+                                <rect key="frame" x="20" y="103" width="335" height="195"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ca8-xZ-nCw">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k12-yg-Qqn">
+                                        <rect key="frame" x="0.0" y="36.5" width="335" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="DemoVC.IBLabel.Text"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlB-fZ-46H">
+                                        <rect key="frame" x="0.0" y="73" width="335" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="DemoVC.Button.Title"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2EY-Bz-hFP">
+                                        <rect key="frame" x="0.0" y="119" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="DemoVC.TextField.Placeholder"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1f7-zR-r5C">
+                                        <rect key="frame" x="0.0" y="165" width="335" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="d1T-tR-9uw" firstAttribute="top" secondItem="cUp-yF-5UC" secondAttribute="bottom" constant="10" id="49U-xm-53y"/>
+                            <constraint firstItem="BEL-CW-I0j" firstAttribute="trailing" secondItem="uXE-fE-rvz" secondAttribute="trailing" constant="20" id="67k-kD-dFb"/>
+                            <constraint firstItem="d1T-tR-9uw" firstAttribute="leading" secondItem="BEL-CW-I0j" secondAttribute="leading" id="8bf-yD-Gx5"/>
+                            <constraint firstItem="BEL-CW-I0j" firstAttribute="trailing" secondItem="cUp-yF-5UC" secondAttribute="trailing" id="8id-ax-56I"/>
+                            <constraint firstItem="cUp-yF-5UC" firstAttribute="top" secondItem="BEL-CW-I0j" secondAttribute="top" constant="16" id="G08-3X-Z0C"/>
+                            <constraint firstItem="uXE-fE-rvz" firstAttribute="top" secondItem="d1T-tR-9uw" secondAttribute="bottom" constant="16" id="GNF-1O-Ii7"/>
+                            <constraint firstItem="BEL-CW-I0j" firstAttribute="trailing" secondItem="d1T-tR-9uw" secondAttribute="trailing" id="LmQ-s3-ugu"/>
+                            <constraint firstItem="cUp-yF-5UC" firstAttribute="leading" secondItem="BEL-CW-I0j" secondAttribute="leading" id="f7l-d0-wWS"/>
+                            <constraint firstItem="BEL-CW-I0j" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uXE-fE-rvz" secondAttribute="bottom" id="ve5-1U-I4i"/>
+                            <constraint firstItem="uXE-fE-rvz" firstAttribute="leading" secondItem="BEL-CW-I0j" secondAttribute="leading" constant="20" id="zlo-se-JP9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BEL-CW-I0j"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="vlB-fZ-46H" id="Tla-bj-ixr"/>
+                        <outlet property="label1" destination="Ca8-xZ-nCw" id="xJD-zr-b3d"/>
+                        <outlet property="label2" destination="k12-yg-Qqn" id="0GJ-2B-qzp"/>
+                        <outlet property="textField1" destination="2EY-Bz-hFP" id="T0E-hb-PdJ"/>
+                        <outlet property="textField2" destination="1f7-zR-r5C" id="Oxj-AF-WAb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uwu-Ec-eM3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="201"/>
+        </scene>
+    </scenes>
+</document>
