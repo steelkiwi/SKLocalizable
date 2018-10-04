@@ -105,7 +105,7 @@ Default value is `nil`, so `Localizable.strings` file will be used
 Use one of described options for components localization:
 
 - Set `localizationKey` in IB:  
-	![Screenshot](https://www.dropbox.com/s/xv6mclf4ibtz8rd/Usage_IB.png)
+	![Screenshot](https://user-images.githubusercontent.com/15200601/46483808-308efd80-c801-11e8-8b4c-74f5d728e498.png)
 	
 - Set `localizationKey` manually in code:
 
@@ -153,19 +153,19 @@ Example:
 ```
 <key>Date.UnitPlural.Hour</key>
 <dict>
-	<key>NSStringLocalizedFormatKey</key>
-	<string>%#@hours@</string>
-	<key>hours</key>
-	<dict>
-		<key>NSStringFormatSpecTypeKey</key>
-		<string>NSStringPluralRuleType</string>
-		<key>NSStringFormatValueTypeKey</key>
-		<string>d</string>
-		<key>one</key>
-		<string>%d hour</string>
-		<key>other</key>
-		<string>%d hours</string>
-	</dict>
+    <key>NSStringLocalizedFormatKey</key>
+    <string>%#@hours@</string>
+    <key>hours</key>
+    <dict>
+        <key>NSStringFormatSpecTypeKey</key>
+        <string>NSStringPluralRuleType</string>
+        <key>NSStringFormatValueTypeKey</key>
+        <string>d</string>
+        <key>one</key>
+        <string>%d hour</string>
+        <key>other</key>
+        <string>%d hours</string>
+    </dict>
 </dict>
 ```
 
@@ -201,7 +201,7 @@ NotificationCenter.default.addObserver(self, selector: #selector(languageChanged
 ```swift
 @objc
 private func languageChanged(_ notification: Notification) {
-	// Manually set localized values
+    // Manually set localized values
 }
 ```
 
@@ -224,7 +224,7 @@ Example of UILabel implementation:
 ```swift
 @objc
 public override func localize() {
-	self.text = localizationKey?.localized(tableName: self.localizationFile)
+    self.text = localizationKey?.localized(tableName: self.localizationFile)
 }
 ```
 
