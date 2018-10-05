@@ -207,7 +207,9 @@ private func languageChanged(_ notification: Notification) {
 
 ## 3 Components
 
-`UIView` implemented `Localizable` protocol, so any it's subclass can expand localization functionality
+`Localizable` protocol is just a list of required methods for localization. It doesn't used directly because of external module.
+
+`UIView` implement methods from `Localizable` protocol, so any it's subclass can expand localization functionality
 
 ### 3.1 Componentes, localized out of the box
 
@@ -231,17 +233,35 @@ public override func localize() {
 Also this components overrides `localizationKey` property of `UIView`. The main purpose of this override - is make property `IBInspectable`
 
 
-### 3.2 Addinitonal / Custom components
+### 3.2 Localize Custom components
 
-You can easily append `Localizable` behaviour to any your component:
+You can easily append `Localizable` behaviour to any your custom component:
 
 - If component is a subclass of `UIView`, just make an extension, which will override `localize` method and will set localized value to corresponding field of your component.  
 Also you can add `IBInspectable` attributes to `localizationKey` or `localizationFile ` via overriding (check [UILabel+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Source/UILabel+Localizable.swift) file for example)
 
 - If component isn't a subclass of `UIView`, please duplicate [UIView+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Source/UIView +Localizable.swift) implementation for `Localizable` protocol conformance
 
+
+## 4 FAQ
+
+- **XCode error `Value of type .. has no member ..`**  
+Happens, when module wasn't imported automatically. Just add `import SKLocalizable` somewhere in your project
+
+- **How I can localize another native component, except mentioned in #3.1?**  
+You can't override implementation from another module, so only correct way to do that is to make a fork and add required code in it.  
+We will also be very gratefull if you make a Pull Request to <olesenko@steelkiwi.com> with your add-on
+
+- **I want to localize mine custom component. How I can do that?**  
+Please check item #3.2
+
+- **I want to localize several properties of component. Do you have default solution?**  
+It's pretty difficult thing to handle automatically.  
+Use notification `.languageChanged` and implement this case manually
+
+
 ## License
 
-SKLocalizable is released under the [MIT license](https://github.com/steelkiwi/SKLocalizable/blob/master/LICENSE) for details.
+SKLocalizable is released under the [MIT license](https://github.com/steelkiwi/SKLocalizable/blob/master/LICENSE)
 
 <sub>Created by Viktor Olesenko on 03.10.18</sub>
