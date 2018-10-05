@@ -11,13 +11,13 @@ public extension UILabel {
     
     // localizationKey overrided just for IBInspectable
     @IBInspectable
-    public override var localizationKey: String? {
+    open override var localizationKey: String? {
         get { return super.localizationKey }
         set { super.localizationKey = newValue }
     }
     
     @objc
-    public override func localize() {
+    open override func localize() {
         self.text = localizationKey?.localized(tableName: self.localizationFile)
     }
 }

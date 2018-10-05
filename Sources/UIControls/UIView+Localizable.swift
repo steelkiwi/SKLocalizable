@@ -7,15 +7,6 @@
 
 import UIKit
 
-private extension Localizable {
-    
-    /// Subscribe to .languageChanged notification
-    func subscribeLanguageNotifications() {}
-    
-    /// Unsubscribe from .languageChanged notification
-    func unsubscribeLanguageNotifications() {}
-}
-
 fileprivate extension UIView {
     
     /// Link and save passed string to 'self' with key
@@ -31,14 +22,14 @@ fileprivate extension UIView {
 
 // Should be defined as private vars for current value storing
 private var associatedKeyTable      : UInt8 = 0
-private var associatedKeyText       : UInt8 = 1
+private var associatedKeyValue      : UInt8 = 1
 private var associatedKeySpecific   : UInt8 = 2
 
 @objc
-extension UIView: Localizable {
+extension UIView {
     
     /// Name of .strings file
-    public var localizationFile: String? {
+    open var localizationFile: String? {
         get { return self.getStored(key: &associatedKeyTable) }
         set {
             self.setStored(string: newValue, key: &associatedKeyTable)
@@ -48,8 +39,8 @@ extension UIView: Localizable {
     }
     
     /// Localization key, which will be used for getting corresponding value from localizationFile.strings
-    public var localizationKey: String? {
-        get { return self.getStored(key: &associatedKeyText) }
+    open var localizationKey: String? {
+        get { return self.getStored(key: &associatedKeyValue) }
         set {
             if let _ = newValue {
                 subscribeLanguageNotifications()
@@ -57,17 +48,19 @@ extension UIView: Localizable {
                 unsubscribeLanguageNotifications()
             }
             
-            self.setStored(string: newValue, key: &associatedKeyText)
+            self.setStored(string: newValue, key: &associatedKeyValue)
             self.localize()
         }
     }
     
-    public func localize() { }
+    open func localize() { }
     
+    /// Subscribe to .languageChanged notification
     private func subscribeLanguageNotifications() {
         NotificationCenter.default.addObserver(self, selector: #selector(localize), name: .languageChanged, object: nil)
     }
     
+    /// Unsubscribe from .languageChanged notification
     private func unsubscribeLanguageNotifications() {
         NotificationCenter.default.removeObserver(self, name: .languageChanged, object: nil)
     }

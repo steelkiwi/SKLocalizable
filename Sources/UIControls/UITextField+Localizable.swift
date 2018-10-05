@@ -11,12 +11,12 @@ public extension UITextField {
     
     // localizationKey overrided just for IBInspectable
     @IBInspectable
-    public override var localizationKey: String? {
+    open override var localizationKey: String? {
         get { return super.localizationKey }
         set { super.localizationKey = newValue }
     }
     
-    public override func localize() {
+    open override func localize() {
         self.placeholder = localizationKey?.localized(tableName: self.localizationFile)
     }
 }

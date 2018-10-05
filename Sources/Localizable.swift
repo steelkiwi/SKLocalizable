@@ -19,3 +19,12 @@ public protocol Localizable {
     /// Setting value, according to localizationKey in this method
     func localize()
 }
+
+public extension Localizable {
+    
+    /// Subscribe to .languageChanged notification
+    func subscribeLanguageNotifications() {}
+    
+    /// Unsubscribe from .languageChanged notification
+    func unsubscribeLanguageNotifications() {}
+}
