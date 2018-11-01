@@ -1,13 +1,13 @@
 //
-//  UIView+Localizable.swift
+//  NSObject+Localizable.swift
 //  SKLocalizable
 //
-//  Created by Viktor Olesenko on 03.10.18.
+//  Created by Viktor Olesenko on 01.11.18.
 //
 
-import UIKit
+import Foundation
 
-fileprivate extension UIView {
+fileprivate extension NSObject {
     
     /// Link and save passed string to 'self' with key
     func setStored(string: String?, key: UnsafePointer<UInt8>) {
@@ -26,7 +26,7 @@ private var associatedKeyValue      : UInt8 = 1
 private var associatedKeySpecific   : UInt8 = 2
 
 @objc
-extension UIView {
+extension NSObject {
     
     /// Name of .strings file
     open var localizationFile: String? {
@@ -63,5 +63,5 @@ extension UIView {
     /// Unsubscribe from .languageChanged notification
     private func unsubscribeLanguageNotifications() {
         NotificationCenter.default.removeObserver(self, name: .languageChanged, object: nil)
-    }
+    }    
 }
