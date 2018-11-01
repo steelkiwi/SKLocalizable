@@ -236,26 +236,49 @@ Also this components overrides `localizationKey` property of `UIView`. The main 
 
 ### 3.2 Localize Custom components
 
-You can easily append `Localizable` behaviour to any your custom component:
+You can easily append `Localizable` behaviour to any your custom component
 
-- If component is a subclass of `UIView`, just make an extension, which will override `localize` method and will set localized value to corresponding field of your component.  
+#### 3.2.1 Component is a subclass of `NSObject`
+
+Just make an extension, which will override `localize` method and will set localized value to corresponding field of your component. The only thing in this case - you should save `open` access modifier.   
+Example:
+
+```swift
+extension UIPickerView {
+    
+    open override func localize() {
+        // Localization logic here
+    }
+}
+```
 Also you can add `IBInspectable` attributes to `localizationKey` or `localizationFile ` via overriding (check [UILabel+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/UIControls/UILabel+Localizable.swift) file for example)
 
-- If component isn't a subclass of `UIView`, please duplicate [UIView+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/UIControls/UIView+Localizable.swift) implementation for `Localizable` protocol conformance.  
-You can check example of this in [UIViewController+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/UIControls/UIViewController+Localizable.swift)
+#### 3.2.2 Component is a subclass of already localized component
+
+Just override `localize` method. Saving `open` is not required.  
+Example:
+
+```swift
+class CustomButton: UIButton {
+    
+    override func localize() {
+        // Localization logic here
+    }
+}
+```
+
+#### 3.2.3 Component isn't a subclass of `NSObject`
+In this case you can duplicate [NSObject+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/UIControls/NSObject+Localizable.swift) implementation for your class
 
 
 ## 4 FAQ
 
 - **XCode error `Value of type .. has no member ..`**  
-Happens, when module wasn't imported automatically. Just add `import SKLocalizable` somewhere in your project
+Happens, when module wasn't imported automatically. Just add `import SKLocalizable` in your project
 
-- **How I can localize another native component, except mentioned in #3.1?**  
-You can't override implementation from another module, so only correct way to do that is to make a fork and add required code in it.  
-We will also be very gratefull if you make a Pull Request to <olesenko@steelkiwi.com> with your add-on
-
-- **I want to localize mine custom component. How I can do that?**  
-Please check item #3.2
+- **How I can localize another native or mine custom component, except mentioned in #3.1?**   
+Please check item #3.2.  
+If you localized native component, we will be very gratefull if you make a Pull Request to <olesenko@steelkiwi.com> with your add-on
 
 - **I want to localize several properties of component. Do you have default solution?**  
 It's pretty difficult thing to handle automatically.  
@@ -266,4 +289,4 @@ Use notification `.languageChanged` and implement this case manually
 
 SKLocalizable is released under the [MIT license](https://github.com/steelkiwi/SKLocalizable/blob/master/LICENSE)
 
-<sub>Created by Viktor Olesenko on 03.10.18</sub>
+<sub>Created by [Viktor Olesenko](https://github.com/OlesenkoViktor) on 03.10.18</sub>
