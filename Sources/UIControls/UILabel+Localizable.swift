@@ -7,7 +7,7 @@
 
 import UIKit
 
-public extension UILabel {
+extension UILabel {
     
     // localizationKey overrided just for IBInspectable
     @IBInspectable
@@ -16,7 +16,6 @@ public extension UILabel {
         set { super.localizationKey = newValue }
     }
     
-    @objc
     open override func localize() {
         self.text = localizationKey?.localized(tableName: self.localizationFile)
     }

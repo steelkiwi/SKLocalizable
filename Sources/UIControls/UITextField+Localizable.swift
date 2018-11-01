@@ -7,7 +7,7 @@
 
 import UIKit
 
-public extension UITextField {
+extension UITextField {
     
     // localizationKey overrided just for IBInspectable
     @IBInspectable
@@ -20,4 +20,3 @@ public extension UITextField {
         self.placeholder = localizationKey?.localized(tableName: self.localizationFile)
     }
 }
-

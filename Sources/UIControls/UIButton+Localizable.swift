@@ -7,7 +7,7 @@
 
 import UIKit
 
-public extension UIButton {
+extension UIButton {
     
     // localizationKey overrided just for IBInspectable
     @IBInspectable
