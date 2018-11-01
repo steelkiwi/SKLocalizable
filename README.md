@@ -30,7 +30,7 @@ Just copy `Sources` Folder to your Project
 
 ### 2.1. Localizable.strings
 
-**Localizable.strings forming rules:**
+**Localizable.strings forming recommendations:**
 
 ```
 /*
@@ -218,6 +218,7 @@ There are exist already localized components:
 - UILabel - `text`
 - UIButton - `title`
 - UITextField - `placeholder`
+- UIViewController - `title`
 
 All mentioned components implements required method `localize` in which they set localized text to corresponding property in required way. 
 
@@ -238,9 +239,10 @@ Also this components overrides `localizationKey` property of `UIView`. The main 
 You can easily append `Localizable` behaviour to any your custom component:
 
 - If component is a subclass of `UIView`, just make an extension, which will override `localize` method and will set localized value to corresponding field of your component.  
-Also you can add `IBInspectable` attributes to `localizationKey` or `localizationFile ` via overriding (check [UILabel+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Source/UILabel+Localizable.swift) file for example)
+Also you can add `IBInspectable` attributes to `localizationKey` or `localizationFile ` via overriding (check [UILabel+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/UIControls/UILabel+Localizable.swift) file for example)
 
-- If component isn't a subclass of `UIView`, please duplicate [UIView+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Source/UIView +Localizable.swift) implementation for `Localizable` protocol conformance
+- If component isn't a subclass of `UIView`, please duplicate [UIView+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/UIControls/UIView+Localizable.swift) implementation for `Localizable` protocol conformance.  
+You can check example of this in [UIViewController+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/UIControls/UIViewController+Localizable.swift)
 
 
 ## 4 FAQ

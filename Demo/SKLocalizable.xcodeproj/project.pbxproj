@@ -21,6 +21,7 @@
 		7715428721621C3000A66003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7715428521621C3000A66003 /* LaunchScreen.storyboard */; };
 		7715429221628A2700A66003 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7715429421628A2700A66003 /* Localizable.strings */; };
 		7715429721628B5A00A66003 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715429621628B5A00A66003 /* Language.swift */; };
+		77B2E9D4218B225500078218 /* UIViewController+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B2E9D3218B225500078218 /* UIViewController+Localizable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		7715428821621C3000A66003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7715429321628A2700A66003 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7715429621628B5A00A66003 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		77B2E9D3218B225500078218 /* UIViewController+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Localizable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				7703681121650B8600643F19 /* UILabel+Localizable.swift */,
 				7703681421650BCC00643F19 /* UIButton+Localizable.swift */,
 				7703681621650BDE00643F19 /* UITextField+Localizable.swift */,
+				77B2E9D3218B225500078218 /* UIViewController+Localizable.swift */,
 			);
 			path = UIControls;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				7703681521650BCC00643F19 /* UIButton+Localizable.swift in Sources */,
 				7703680A21650A6A00643F19 /* Localizable.swift in Sources */,
 				7703680C21650AA000643F19 /* Bunle+Localizable.swift in Sources */,
+				77B2E9D4218B225500078218 /* UIViewController+Localizable.swift in Sources */,
 				7715427D21621C2D00A66003 /* AppDelegate.swift in Sources */,
 				7703680E21650AEB00643F19 /* String+Localizable.swift in Sources */,
 				7703681221650B8600643F19 /* UILabel+Localizable.swift in Sources */,
