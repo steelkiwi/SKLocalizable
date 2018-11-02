@@ -1,5 +1,5 @@
 /*
- * 1. Group lines to sections
+ * 1. Group logic blocks to sections. Ex: Enums, Errors, Screens, etc
  *
  * 2. Section name format:
  *      // ======
@@ -12,7 +12,7 @@
  *      /*  *'/ - comment about string
  *      "Key" = "Value";
  *
- *      Optional: 'Key' should contain name of screen and identifier (any number of words), separated with "." symbol
+ *      Recommendation: 'Key' should contain name of screen and identifier (any number of words), separated with "." symbol
  *
  * 5. Parameters in strings should be named using format:
  *      $(ParameterNameKey) - it will be automatically replaced with value from passed dict while localization
@@ -26,6 +26,7 @@
 // 'MARK: - Demo screen
 // ======
 
+
 // MARK - Language Buttons
 
 /* Button, that switches to English language */
@@ -33,6 +34,7 @@
 
 /* Button, that switches to Russian language */
 "DemoVC.LanguageButton.Russian" = "Русский";
+
 
 // MARK - UI Components
 

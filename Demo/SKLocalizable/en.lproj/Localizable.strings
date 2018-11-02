@@ -12,7 +12,7 @@
  *      /*  *'/ - comment about string
  *      "Key" = "Value";
  *
- *      Optional: 'Key' should contain name of screen and identifier (any number of words), separated with "." symbol
+ *      Recommendation: 'Key' should contain name of screen and identifier (any number of words), separated with "." symbol
  *
  * 5. Parameters in strings should be named using format:
  *      $(ParameterNameKey) - it will be automatically replaced with value from passed dict while localization
