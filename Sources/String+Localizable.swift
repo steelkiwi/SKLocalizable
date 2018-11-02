@@ -14,8 +14,8 @@ public extension String {
     /// - Parameter tableName: .strings file name
     /// - Parameter bundle: language bundle, from where should be taken value. Default is Bundle.localiztion
     /// - Parameter arguments: JSON, where:
-    ///     - key - is key in localized string value from .strings file
-    ///     - value - string, which will be used for replacing key in localized string
+    ///     - key - is parameter key in localized string value from .strings file
+    ///     - value - value, which will be used for replacing key in localized string. Should conforms to [String convertible](https://developer.apple.com/documentation/swift/string/2427941-init)
     /// - Returns: localized value if found. Key (self) otherwise
     public func localized(tableName: String? = nil, bundle: Bundle = .localization, arguments: Dictionary<String, Any>? = nil) -> String {
         
@@ -23,8 +23,10 @@ public extension String {
         
         if let arguments = arguments {
             for key in arguments.keys {
-                let value = String.init(describing: arguments[key]!)
-                localizedValue = localizedValue.replacingOccurrences(of: "$(\(key))", with: value)
+                guard let value = arguments[key] else { continue }
+                let valueString = String.init(describing: value)
+                
+                localizedValue = localizedValue.replacingOccurrences(of: "$(\(key))", with: valueString)
             }
         }
         
