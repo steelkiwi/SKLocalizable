@@ -23,10 +23,20 @@ public extension String {
         
         if let arguments = arguments {
             for key in arguments.keys {
-                guard let value = arguments[key] else { continue }
+                guard let value = arguments[key] else {
+                    assertionFailure("Nil value for passed kay '\(key)'")
+                    continue
+                }
                 let valueString = String.init(describing: value)
                 
-                localizedValue = localizedValue.replacingOccurrences(of: "$(\(key))", with: valueString)
+                let keySubstring = "$(\(key))"
+                
+                // TODO: - replace with reverted logic: get all keys in localizaed value and check their existence in argumants
+                if !localizedValue.contains(keySubstring) {
+                    assertionFailure("Localized value doesn't contain passed key")
+                }
+                
+                localizedValue = localizedValue.replacingOccurrences(of: keySubstring, with: valueString)
             }
         }
         
