@@ -28,7 +28,7 @@ Just copy `Sources` Folder to your Project
 
 ## 2. Usage
 
-### 2.1. Localizable.strings
+### 2.1 Localizable.strings
 
 **Localizable.strings forming recommendations:**
 
@@ -93,16 +93,16 @@ Just copy `Sources` Folder to your Project
 "DemoVC.TextField.Text" = "TextField - Code - Text";
 ```
 
-### 2.2. Localization File
+### 2.2 Localization File
 
-`localizationFile` value is using for defining specific `.strings` file.
+`localizationFile` value is used for defining specific `.strings` file.
 
 Default value is `nil`, so `Localizable.strings` file will be used
 
 
-### 2.3. Localization Key
+### 2.3 Localization Key
 
-Use one of described options for components localization:
+Use one of the described options for components localization:
 
 - Set `localizationKey` in IB:  
 	![Screenshot](https://user-images.githubusercontent.com/15200601/46483808-308efd80-c801-11e8-8b4c-74f5d728e498.png)
@@ -113,9 +113,9 @@ Use one of described options for components localization:
 label.localizationKey = "DemoVC.CodeLabel.Text"
 ```
 
-### 2.4. Localized Value
+### 2.4 Localized Value
 
-You can set localized value directly in code, using String `localized` method:
+You can set localized value directly in code using String `localized` method:
 
 ```swift
 /// Get self as key and return related localized value
@@ -133,7 +133,7 @@ Example:
 `textField.text = "DemoVC.TextField.Text".localized()`
 
 
-### 2.5. Localized Plural value
+### 2.5 Localized Plural value
 
 If you need to use plurals in your project, use String method `localizedPlural`:
 
@@ -148,7 +148,7 @@ public func localizedPlural(tableName: String? = nil, arguments: CVarArg...) -> 
 ```
 
 Example:  
-"Localizable.stringsdict" contains next key:
+`Localizable.stringsdict` contains the following key:
 
 ```
 <key>Date.UnitPlural.Hour</key>
@@ -172,7 +172,7 @@ Example:
 Usage: `"Date.UnitPlural.Hour".localizedPlural(arguments: hoursIntValue)`  
 
 
-`Date.UnitPlural.Hour` will return "%d hour" string if `hoursIntValue` == 1 and "%d hours" otherwise. After that, value `hoursIntValue` will be inserted at  `%d` place and we will receive result string "1 hour" / "5 hours"
+`Date.UnitPlural.Hour` will return "%d hour" string if `hoursIntValue` == 1 and "%d hours" otherwise. After that, value `hoursIntValue` will be inserted at  `%d` place and we will receive  "1 hour" / "5 hours" result string
 
 Useful links about plurals:
 
@@ -180,15 +180,13 @@ Useful links about plurals:
 - [Plural rules](http://www.unicode.org/cldr/charts/latest/supplemental/language_plural_rules.html)
 
 
-### 2.6. NotificationCenter - `languageChanged` notification
+### 2.6 NotificationCenter - `languageChanged` notification
 
 For language changing use **Bundle.localization**. It's default value is .main
 
-Setting new language: `Bundle.localization = Bundle.init(languageCode: languageCode)`
+Setting new language: `Bundle.localization = Bundle.init(languageCode: languageCode)`, where `languageCode` is 2-symbol presentation of language. If you're not sure about code, you can take it from `.lproj` folder name after adding a new project language
 
-Where `languageCode` is 2-symbol presentation of language. If you not sure about code, you can take it from `.lproj` folder name after new project language adding
-
-When new value was set, `languageChanged`, notification will be send via `NotificationCenter.default`
+When new value is set, `languageChanged`, notification will be send via `NotificationCenter.default`
 
 Components with defined `localizationKey` will change their value automatically
 
@@ -205,22 +203,22 @@ private func languageChanged(_ notification: Notification) {
 }
 ```
 
-## 3 Components
+## 3. Components
 
-`Localizable` protocol is just a list of required methods for localization. It doesn't used directly because of external module.
+`Localizable` protocol is just a list of required methods for localization. It isn't used directly because of external module.
 
-`UIView` implement methods from `Localizable` protocol, so any it's subclass can expand localization functionality
+`UIView` implement methods from `Localizable` protocol, so any of it's subclasses can expand localization functionality
 
 ### 3.1 Componentes, localized out of the box
 
-There are exist already localized components:
+There exist components that are already localized:
 
 - UILabel - `text`
 - UIButton - `title`
 - UITextField - `placeholder`
 - UIViewController - `title`
 
-All mentioned components implements required method `localize` in which they set localized text to corresponding property in required way. 
+All mentioned components implement required method `localize` in which they set localized text to corresponding property in a required way. 
 
 Example of UILabel implementation: 
 
@@ -236,11 +234,11 @@ Also this components overrides `localizationKey` property of `UIView`. The main 
 
 ### 3.2 Localize Custom components
 
-You can easily append `Localizable` behaviour to any your custom component
+You can easily append `Localizable` behaviour to any custom component of yours
 
 #### 3.2.1 Component is a subclass of `NSObject`
 
-Just make an extension, which will override `localize` method and will set localized value to corresponding field of your component. The only thing in this case - you should save `open` access modifier.   
+Just make an extension which will override `localize` method and will set localized value to corresponding field of your component. The only thing in this case is you should save `open` access modifier.   
 Example:
 
 ```swift
@@ -251,7 +249,7 @@ extension UIPickerView {
     }
 }
 ```
-Also you can add `IBInspectable` attributes to `localizationKey` or `localizationFile ` via overriding (check [UILabel+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/UIControls/UILabel+Localizable.swift) file for example)
+Also, you can add `IBInspectable` attributes to `localizationKey` or `localizationFile ` via overriding (check [UILabel+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/UIControls/UILabel+Localizable.swift) file for example)
 
 #### 3.2.2 Component is a subclass of already localized component
 
@@ -268,20 +266,20 @@ class CustomButton: UIButton {
 ```
 
 #### 3.2.3 Component isn't a subclass of `NSObject`
-In this case you can duplicate [NSObject+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/UIControls/NSObject+Localizable.swift) implementation for your class
+In this case, you can duplicate [NSObject+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/UIControls/NSObject+Localizable.swift) implementation for your class
 
 
-## 4 FAQ
+## 4. FAQ
 
 - **XCode error `Value of type .. has no member ..`**  
-Happens, when module wasn't imported automatically. Just add `import SKLocalizable` in your project
+It happens when module wasn't imported automatically. Just add `import SKLocalizable` to your project
 
 - **How I can localize another native or mine custom component, except mentioned in #3.1?**   
 Please check item #3.2.  
-If you localized native component, we will be very gratefull if you make a Pull Request to <olesenko@steelkiwi.com> with your add-on
+If you localized native component, we will be very grateful if you make a Pull Request to <olesenko@steelkiwi.com> with your add-on
 
 - **I want to localize several properties of component. Do you have default solution?**  
-It's pretty difficult thing to handle automatically.  
+It's a pretty difficult thing to handle automatically, so we don't.  
 Use notification `.languageChanged` and implement this case manually
 
 
