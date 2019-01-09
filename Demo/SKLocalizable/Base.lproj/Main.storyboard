@@ -95,6 +95,22 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gf5-uw-PRV">
+                                <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <tabBarItem id="fxG-lt-gO9">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="DemoVC.TabBar.Button.First"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tabBarItem>
+                                    <tabBarItem title="" id="cze-N6-ssw">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="DemoVC.TabBar.Button.Second"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tabBarItem>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -102,10 +118,13 @@
                             <constraint firstItem="BEL-CW-I0j" firstAttribute="trailing" secondItem="uXE-fE-rvz" secondAttribute="trailing" constant="20" id="67k-kD-dFb"/>
                             <constraint firstItem="d1T-tR-9uw" firstAttribute="leading" secondItem="BEL-CW-I0j" secondAttribute="leading" id="8bf-yD-Gx5"/>
                             <constraint firstItem="BEL-CW-I0j" firstAttribute="trailing" secondItem="cUp-yF-5UC" secondAttribute="trailing" id="8id-ax-56I"/>
+                            <constraint firstItem="BEL-CW-I0j" firstAttribute="trailing" secondItem="gf5-uw-PRV" secondAttribute="trailing" id="8oD-ax-9Uk"/>
                             <constraint firstItem="cUp-yF-5UC" firstAttribute="top" secondItem="BEL-CW-I0j" secondAttribute="top" constant="16" id="G08-3X-Z0C"/>
                             <constraint firstItem="uXE-fE-rvz" firstAttribute="top" secondItem="d1T-tR-9uw" secondAttribute="bottom" constant="16" id="GNF-1O-Ii7"/>
                             <constraint firstItem="BEL-CW-I0j" firstAttribute="trailing" secondItem="d1T-tR-9uw" secondAttribute="trailing" id="LmQ-s3-ugu"/>
                             <constraint firstItem="cUp-yF-5UC" firstAttribute="leading" secondItem="BEL-CW-I0j" secondAttribute="leading" id="f7l-d0-wWS"/>
+                            <constraint firstItem="gf5-uw-PRV" firstAttribute="leading" secondItem="idp-2A-Lvh" secondAttribute="leading" id="gnv-wJ-aqO"/>
+                            <constraint firstItem="BEL-CW-I0j" firstAttribute="bottom" secondItem="gf5-uw-PRV" secondAttribute="bottom" id="tVl-hu-hYX"/>
                             <constraint firstItem="BEL-CW-I0j" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="uXE-fE-rvz" secondAttribute="bottom" id="ve5-1U-I4i"/>
                             <constraint firstItem="uXE-fE-rvz" firstAttribute="leading" secondItem="BEL-CW-I0j" secondAttribute="leading" constant="20" id="zlo-se-JP9"/>
                         </constraints>

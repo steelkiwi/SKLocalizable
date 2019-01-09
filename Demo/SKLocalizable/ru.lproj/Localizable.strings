@@ -53,5 +53,8 @@
 /* TextField, whose text value is set in the code */
 "DemoVC.TextField.Text" = "Текстовое Поле - Код - Текст";
 
+/* First Tab title */
+"DemoVC.TabBar.Button.First" = "Первая вкладка";
 
-
+/* Second Tab title */
+"DemoVC.TabBar.Button.Second" = "Вторая вкладка";
