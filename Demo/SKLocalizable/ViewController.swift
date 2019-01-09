@@ -52,15 +52,15 @@ class ViewController: UIViewController {
 private extension Language {
     
     init?(tag: Int) {
-        switch tag {
-        case Language.english.tag: self = .english
-        case Language.russian.tag: self = .russian
-        default: return nil
+        if Language.allCases.count > tag {
+            self = Language.allCases[tag]
+        } else {
+            return nil
         }
     }
     
     var tag: Int {
-        return self.hashValue
+        return Language.allCases.firstIndex(of: self)!
     }
     
     var languageCode: String {
