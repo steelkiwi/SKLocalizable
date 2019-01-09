@@ -95,6 +95,25 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Ffs-IA-9ug" userLabel="counterButtonsStackView">
+                                <rect key="frame" x="16" y="314" width="343" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EG9-Zh-hJk">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="counterIncrement:" destination="B8h-aG-Q8r" eventType="touchUpInside" id="Uh5-GZ-wQI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlu-T7-0t5">
+                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="30"/>
+                                        <state key="normal" title="Missed argument"/>
+                                        <connections>
+                                            <action selector="missedParamAction" destination="B8h-aG-Q8r" eventType="touchUpInside" id="OFk-PR-PZ0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                             <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gf5-uw-PRV">
                                 <rect key="frame" x="0.0" y="618" width="375" height="49"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -115,13 +134,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="d1T-tR-9uw" firstAttribute="top" secondItem="cUp-yF-5UC" secondAttribute="bottom" constant="10" id="49U-xm-53y"/>
+                            <constraint firstItem="Ffs-IA-9ug" firstAttribute="top" secondItem="uXE-fE-rvz" secondAttribute="bottom" constant="16" id="5fW-gb-4xq"/>
                             <constraint firstItem="BEL-CW-I0j" firstAttribute="trailing" secondItem="uXE-fE-rvz" secondAttribute="trailing" constant="20" id="67k-kD-dFb"/>
                             <constraint firstItem="d1T-tR-9uw" firstAttribute="leading" secondItem="BEL-CW-I0j" secondAttribute="leading" id="8bf-yD-Gx5"/>
                             <constraint firstItem="BEL-CW-I0j" firstAttribute="trailing" secondItem="cUp-yF-5UC" secondAttribute="trailing" id="8id-ax-56I"/>
                             <constraint firstItem="BEL-CW-I0j" firstAttribute="trailing" secondItem="gf5-uw-PRV" secondAttribute="trailing" id="8oD-ax-9Uk"/>
                             <constraint firstItem="cUp-yF-5UC" firstAttribute="top" secondItem="BEL-CW-I0j" secondAttribute="top" constant="16" id="G08-3X-Z0C"/>
                             <constraint firstItem="uXE-fE-rvz" firstAttribute="top" secondItem="d1T-tR-9uw" secondAttribute="bottom" constant="16" id="GNF-1O-Ii7"/>
+                            <constraint firstItem="Ffs-IA-9ug" firstAttribute="leading" secondItem="BEL-CW-I0j" secondAttribute="leading" constant="16" id="Kz5-mi-pM7"/>
                             <constraint firstItem="BEL-CW-I0j" firstAttribute="trailing" secondItem="d1T-tR-9uw" secondAttribute="trailing" id="LmQ-s3-ugu"/>
+                            <constraint firstItem="BEL-CW-I0j" firstAttribute="trailing" secondItem="Ffs-IA-9ug" secondAttribute="trailing" constant="16" id="boc-fy-sc0"/>
                             <constraint firstItem="cUp-yF-5UC" firstAttribute="leading" secondItem="BEL-CW-I0j" secondAttribute="leading" id="f7l-d0-wWS"/>
                             <constraint firstItem="gf5-uw-PRV" firstAttribute="leading" secondItem="idp-2A-Lvh" secondAttribute="leading" id="gnv-wJ-aqO"/>
                             <constraint firstItem="BEL-CW-I0j" firstAttribute="bottom" secondItem="gf5-uw-PRV" secondAttribute="bottom" id="tVl-hu-hYX"/>
@@ -132,6 +154,8 @@
                     </view>
                     <connections>
                         <outlet property="button" destination="vlB-fZ-46H" id="Tla-bj-ixr"/>
+                        <outlet property="counterButton" destination="EG9-Zh-hJk" id="SUO-tC-djR"/>
+                        <outlet property="failableButton" destination="Dlu-T7-0t5" id="LRr-sA-h30"/>
                         <outlet property="label1" destination="Ca8-xZ-nCw" id="xJD-zr-b3d"/>
                         <outlet property="label2" destination="k12-yg-Qqn" id="0GJ-2B-qzp"/>
                         <outlet property="textField1" destination="2EY-Bz-hFP" id="T0E-hb-PdJ"/>
