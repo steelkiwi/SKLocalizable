@@ -38,6 +38,9 @@
 
 // MARK - UI Components
 
+/* Top right barButton */
+"DemoVC.BarButton.Right" = "НавБар Кнопка";
+
 /* Label, whose text value is set in the code */
 "DemoVC.CodeLabel.Text" = "Лейба - Код";
 

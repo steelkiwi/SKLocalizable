@@ -11,6 +11,8 @@ class ViewController: UIViewController {
     
     // MARK: - Outlets
     
+    @IBOutlet weak var barButton    : UIBarButtonItem!
+    
     @IBOutlet weak var label1       : UILabel!      // Set key in code
     @IBOutlet weak var label2       : UILabel!      // Set key in IB
     @IBOutlet weak var button       : UIButton!     // Set key in IB
