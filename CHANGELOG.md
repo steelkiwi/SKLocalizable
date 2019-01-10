@@ -3,7 +3,19 @@ All notable changes to this project will be documented in this file.
 `SKLocalizable ` adheres to [Semantic Versioning](https://semver.org/).
 
 #### 1.x Releases
-- `1.0.x` Releases - [1.0.1](#101) | [1.0.2](#102)
+- `1.0.x` Releases - [1.0.1](#101) | [1.0.2](#102) | [1.0.3](#103)
+
+
+## [1.0.3](https://github.com/steelkiwi/SKLocalizable/releases/tag/1.0.3)
+Released on 2019-01-10
+
+#### Added
+- `UITabBarItem` title localization support by [Zinuk](https://github.com/zinukArtem)
+- `UIBarButtonItem` title localization support
+
+#### Updated
+- Reverted arguments detection logic - now required arguments are parsing from localized value instead of just using passed arguments
+- Fixed Demo app language change code
 
 
 ## [1.0.2](https://github.com/steelkiwi/SKLocalizable/releases/tag/1.0.2)
