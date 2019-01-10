@@ -38,6 +38,9 @@
 
 // MARK - UI Components
 
+/* Top right barButton */
+"DemoVC.BarButton.Right" = "NavBar Button";
+
 /* Label, whose text value is set in the code */
 "DemoVC.CodeLabel.Text" = "Label - Code";
 
@@ -53,5 +56,14 @@
 /* TextField, whose text value is set in the code */
 "DemoVC.TextField.Text" = "TextField - Code - Text";
 
+/* Counter button */
+"DemoVC.Button.Counter" = "Counter: $(counter_value)";
 
+/* Missed argument button */
+"DemoVC.Button.MissedArgument" = "Required argument: $(argument)";
 
+/* First Tab title */
+"DemoVC.TabBar.Button.First" = "First tab";
+
+/* Second Tab title */
+"DemoVC.TabBar.Button.Second" = "Second tab";

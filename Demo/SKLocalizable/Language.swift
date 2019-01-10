@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Language {
+enum Language: CaseIterable {
     case english
     case russian
 }
