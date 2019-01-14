@@ -268,7 +268,7 @@ class CustomButton: UIButton {
 ```
 
 #### 3.2.3 Component isn't a subclass of `NSObject`
-In this case, you can duplicate [NSObject+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/UIControls/NSObject+Localizable.swift) implementation for your class
+In this case, you can duplicate [NSObject+Localizable.swift](https://github.com/steelkiwi/SKLocalizable/blob/master/Sources/NSObject+Localizable.swift) implementation for your class
 
 
 ## 4. FAQ
