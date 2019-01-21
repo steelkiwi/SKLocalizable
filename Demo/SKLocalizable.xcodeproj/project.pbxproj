@@ -20,6 +20,7 @@
 		7715428721621C3000A66003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7715428521621C3000A66003 /* LaunchScreen.storyboard */; };
 		7715429221628A2700A66003 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7715429421628A2700A66003 /* Localizable.strings */; };
 		7715429721628B5A00A66003 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715429621628B5A00A66003 /* Language.swift */; };
+		7763B8DE21F4A99F00088F7F /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 7763B8DD21F4A99E00088F7F /* Localizable.stringsdict */; };
 		7796049421E640F2007B76ED /* UITabBarItem+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7796049321E640F2007B76ED /* UITabBarItem+Localizable.swift */; };
 		77A5FE4D21E73AAE009862A6 /* UIBarButtonItem+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A5FE4C21E73AAE009862A6 /* UIBarButtonItem+Localizable.swift */; };
 		77B2E9D4218B225500078218 /* UIViewController+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B2E9D3218B225500078218 /* UIViewController+Localizable.swift */; };
@@ -43,6 +44,7 @@
 		7715428821621C3000A66003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7715429321628A2700A66003 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7715429621628B5A00A66003 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		7763B8DD21F4A99E00088F7F /* Localizable.stringsdict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
 		7796049321E640F2007B76ED /* UITabBarItem+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Localizable.swift"; sourceTree = "<group>"; };
 		77A5FE4C21E73AAE009862A6 /* UIBarButtonItem+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Localizable.swift"; sourceTree = "<group>"; };
 		77B2E9D3218B225500078218 /* UIViewController+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Localizable.swift"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				7703680821650A6A00643F19 /* Sources */,
 				7715429421628A2700A66003 /* Localizable.strings */,
+				7763B8DD21F4A99E00088F7F /* Localizable.stringsdict */,
 				7715427C21621C2D00A66003 /* AppDelegate.swift */,
 				7715427E21621C2D00A66003 /* ViewController.swift */,
 				7715429621628B5A00A66003 /* Language.swift */,
@@ -179,6 +182,7 @@
 				7715428721621C3000A66003 /* LaunchScreen.storyboard in Resources */,
 				7715429221628A2700A66003 /* Localizable.strings in Resources */,
 				7715428421621C3000A66003 /* Assets.xcassets in Resources */,
+				7763B8DE21F4A99F00088F7F /* Localizable.stringsdict in Resources */,
 				7715428221621C2D00A66003 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
