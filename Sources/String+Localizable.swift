@@ -57,7 +57,7 @@ public extension String {
     private func keys(from string: String) -> Array<String>? {
         var foundKeys: Array<String>?
         
-        let pattern = "\\$\\(\\S+\\)"
+        let pattern = "\\$\\([\\S][^\\$]*\\)"
         let regex = try! NSRegularExpression.init(pattern: pattern)
         
         regex.matches(in: string, range: NSRange.init(location: 0, length: string.count)).forEach { (keyRange) in
