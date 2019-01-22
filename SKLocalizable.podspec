@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SKLocalizable"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "Localization add-on for native iOS components"
 
   s.description  = <<-DESC
