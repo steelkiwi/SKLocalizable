@@ -14,8 +14,15 @@ public extension Bundle {
     /// Returns nil if there is no bundle for this language.
     ///
     /// Example: Bundle.init(languageCode: "en")
-    public convenience init?(languageCode: String) {
-        guard let bundlePath = Bundle.main.path(forResource: languageCode, ofType: "lproj") else { return nil }
+    public convenience init?(identifier: String? = nil, languageCode: String) {
+        var bundle: Bundle = .main
+        
+        if let identifier = identifier,
+            let bundleForIdentifier = Bundle.init(identifier: identifier) {
+            bundle = bundleForIdentifier
+        }
+        
+        guard let bundlePath = bundle.path(forResource: languageCode, ofType: "lproj") else { return nil }
         
         self.init(path: bundlePath)
     }
