@@ -20,11 +20,28 @@
 		7715428721621C3000A66003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7715428521621C3000A66003 /* LaunchScreen.storyboard */; };
 		7715429221628A2700A66003 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7715429421628A2700A66003 /* Localizable.strings */; };
 		7715429721628B5A00A66003 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7715429621628B5A00A66003 /* Language.swift */; };
+		7763B8DE21F4A99F00088F7F /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 7763B8DD21F4A99E00088F7F /* Localizable.stringsdict */; };
+		7763B8E621F731E400088F7F /* SKLocalizableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7763B8E521F731E400088F7F /* SKLocalizableTests.swift */; };
+		7763B8F021F736FF00088F7F /* Localizable2.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7763B8EF21F736FF00088F7F /* Localizable2.strings */; };
+		7763B8F221F743AC00088F7F /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 7763B8F121F743AC00088F7F /* Localizable.stringsdict */; };
+		7763B8F421F745A000088F7F /* SKLocalizable+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7763B8F321F745A000088F7F /* SKLocalizable+NSObject.swift */; };
+		7763B8F521F745D600088F7F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7763B8F721F745D600088F7F /* Localizable.strings */; };
+		7763B8FA21F7476400088F7F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7763B8F921F7476400088F7F /* Constant.swift */; };
 		7796049421E640F2007B76ED /* UITabBarItem+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7796049321E640F2007B76ED /* UITabBarItem+Localizable.swift */; };
 		77A5FE4D21E73AAE009862A6 /* UIBarButtonItem+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A5FE4C21E73AAE009862A6 /* UIBarButtonItem+Localizable.swift */; };
 		77B2E9D4218B225500078218 /* UIViewController+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B2E9D3218B225500078218 /* UIViewController+Localizable.swift */; };
 		77B2E9D8218B2ACF00078218 /* NSObject+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77B2E9D7218B2ACF00078218 /* NSObject+Localizable.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7763B8E821F731E400088F7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7715427121621C2D00A66003 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7715427821621C2D00A66003;
+			remoteInfo = SKLocalizable;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		7703680921650A6A00643F19 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
@@ -43,6 +60,16 @@
 		7715428821621C3000A66003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7715429321628A2700A66003 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7715429621628B5A00A66003 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		7763B8DD21F4A99E00088F7F /* Localizable.stringsdict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
+		7763B8E321F731E300088F7F /* SKLocalizableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SKLocalizableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7763B8E521F731E400088F7F /* SKLocalizableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKLocalizableTests.swift; sourceTree = "<group>"; };
+		7763B8E721F731E400088F7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7763B8EF21F736FF00088F7F /* Localizable2.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable2.strings; sourceTree = "<group>"; };
+		7763B8F121F743AC00088F7F /* Localizable.stringsdict */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
+		7763B8F321F745A000088F7F /* SKLocalizable+NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKLocalizable+NSObject.swift"; sourceTree = "<group>"; };
+		7763B8F621F745D600088F7F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7763B8F821F745D900088F7F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7763B8F921F7476400088F7F /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		7796049321E640F2007B76ED /* UITabBarItem+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Localizable.swift"; sourceTree = "<group>"; };
 		77A5FE4C21E73AAE009862A6 /* UIBarButtonItem+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Localizable.swift"; sourceTree = "<group>"; };
 		77B2E9D3218B225500078218 /* UIViewController+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Localizable.swift"; sourceTree = "<group>"; };
@@ -51,6 +78,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		7715427621621C2D00A66003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7763B8E021F731E300088F7F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -90,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				7715427B21621C2D00A66003 /* SKLocalizable */,
+				7763B8E421F731E400088F7F /* SKLocalizableTests */,
 				7715427A21621C2D00A66003 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				7715427921621C2D00A66003 /* SKLocalizable.app */,
+				7763B8E321F731E300088F7F /* SKLocalizableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +143,7 @@
 			children = (
 				7703680821650A6A00643F19 /* Sources */,
 				7715429421628A2700A66003 /* Localizable.strings */,
+				7763B8DD21F4A99E00088F7F /* Localizable.stringsdict */,
 				7715427C21621C2D00A66003 /* AppDelegate.swift */,
 				7715427E21621C2D00A66003 /* ViewController.swift */,
 				7715429621628B5A00A66003 /* Language.swift */,
@@ -116,6 +153,20 @@
 				7715428821621C3000A66003 /* Info.plist */,
 			);
 			path = SKLocalizable;
+			sourceTree = "<group>";
+		};
+		7763B8E421F731E400088F7F /* SKLocalizableTests */ = {
+			isa = PBXGroup;
+			children = (
+				7763B8E521F731E400088F7F /* SKLocalizableTests.swift */,
+				7763B8F321F745A000088F7F /* SKLocalizable+NSObject.swift */,
+				7763B8F721F745D600088F7F /* Localizable.strings */,
+				7763B8EF21F736FF00088F7F /* Localizable2.strings */,
+				7763B8F121F743AC00088F7F /* Localizable.stringsdict */,
+				7763B8E721F731E400088F7F /* Info.plist */,
+				7763B8F921F7476400088F7F /* Constant.swift */,
+			);
+			path = SKLocalizableTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,17 +189,40 @@
 			productReference = 7715427921621C2D00A66003 /* SKLocalizable.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7763B8E221F731E300088F7F /* SKLocalizableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7763B8EC21F731E400088F7F /* Build configuration list for PBXNativeTarget "SKLocalizableTests" */;
+			buildPhases = (
+				7763B8DF21F731E300088F7F /* Sources */,
+				7763B8E021F731E300088F7F /* Frameworks */,
+				7763B8E121F731E300088F7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7763B8E921F731E400088F7F /* PBXTargetDependency */,
+			);
+			name = SKLocalizableTests;
+			productName = SKLocalizableTests;
+			productReference = 7763B8E321F731E300088F7F /* SKLocalizableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		7715427121621C2D00A66003 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				TargetAttributes = {
 					7715427821621C2D00A66003 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1010;
+					};
+					7763B8E221F731E300088F7F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 7715427821621C2D00A66003;
 					};
 				};
 			};
@@ -167,6 +241,7 @@
 			projectRoot = "";
 			targets = (
 				7715427821621C2D00A66003 /* SKLocalizable */,
+				7763B8E221F731E300088F7F /* SKLocalizableTests */,
 			);
 		};
 /* End PBXProject section */
@@ -179,7 +254,18 @@
 				7715428721621C3000A66003 /* LaunchScreen.storyboard in Resources */,
 				7715429221628A2700A66003 /* Localizable.strings in Resources */,
 				7715428421621C3000A66003 /* Assets.xcassets in Resources */,
+				7763B8DE21F4A99F00088F7F /* Localizable.stringsdict in Resources */,
 				7715428221621C2D00A66003 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7763B8E121F731E300088F7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7763B8F021F736FF00088F7F /* Localizable2.strings in Resources */,
+				7763B8F521F745D600088F7F /* Localizable.strings in Resources */,
+				7763B8F221F743AC00088F7F /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +292,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7763B8DF21F731E300088F7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7763B8F421F745A000088F7F /* SKLocalizable+NSObject.swift in Sources */,
+				7763B8E621F731E400088F7F /* SKLocalizableTests.swift in Sources */,
+				7763B8FA21F7476400088F7F /* Constant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7763B8E921F731E400088F7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7715427821621C2D00A66003 /* SKLocalizable */;
+			targetProxy = 7763B8E821F731E400088F7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7715428021621C2D00A66003 /* Main.storyboard */ = {
@@ -230,6 +334,15 @@
 			children = (
 				7715429321628A2700A66003 /* en */,
 				7703681821660C5200643F19 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		7763B8F721F745D600088F7F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7763B8F621F745D600088F7F /* en */,
+				7763B8F821F745D900088F7F /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -367,7 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.steelkiwi.SKLocalizable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -386,8 +499,57 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.steelkiwi.SKLocalizable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7763B8EA21F731E400088F7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SKLocalizableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steelkiwi.SKLocalizableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKLocalizable.app/SKLocalizable";
+			};
+			name = Debug;
+		};
+		7763B8EB21F731E400088F7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SKLocalizableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.steelkiwi.SKLocalizableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SKLocalizable.app/SKLocalizable";
 			};
 			name = Release;
 		};
@@ -408,6 +570,15 @@
 			buildConfigurations = (
 				7715428C21621C3000A66003 /* Debug */,
 				7715428D21621C3000A66003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7763B8EC21F731E400088F7F /* Build configuration list for PBXNativeTarget "SKLocalizableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7763B8EA21F731E400088F7F /* Debug */,
+				7763B8EB21F731E400088F7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

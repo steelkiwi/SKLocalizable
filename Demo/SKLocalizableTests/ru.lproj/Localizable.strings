@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  SKLocalizable
+
+  Created by Viktor Olesenko on 22.01.19.
+  
+*/
+
+"Filename" = "Localizable_ru";
+
+// Simple string section
+
+"String.Simple"                 = "Simple";
+"String.Parameterized.One"      = "$(value)";
+"String.Parameterized.Multiple" = "$(value_1),$(value_2)";
+
+// UIComponents
+
+"Label.Title"           = "Лейба";
+"Button.Title"          = "Кнопка";
+"TextField.Placeholder" = "Текстовое Поле";
+"UIViewContr.Title"     = "Экран";
+"UITabBarItem.Title"    = "ТабБар Кнопка";
+"UIBarButtonItem.Title" = "НавБар Кнопка";
+
+"Custom.Text" = "Кастом";

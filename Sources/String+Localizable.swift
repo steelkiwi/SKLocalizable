@@ -57,7 +57,7 @@ public extension String {
     private func keys(from string: String) -> Array<String>? {
         var foundKeys: Array<String>?
         
-        let pattern = "\\$\\(\\S+\\)"
+        let pattern = "\\$\\([\\S][^\\$]*\\)"
         let regex = try! NSRegularExpression.init(pattern: pattern)
         
         regex.matches(in: string, range: NSRange.init(location: 0, length: string.count)).forEach { (keyRange) in
@@ -82,6 +82,6 @@ public extension String {
     /// - Parameter arguments: set of parameters, which should be use for plural replacement
     /// Example: "Date.UnitPlural.Hour" key -> "%d hour" value for argument "1" -> put argument at "%d" place -> returns "1 hour" result string
     public func localizedPlural(tableName: String? = nil, arguments: CVarArg...) -> String {
-        return String.localizedStringWithFormat(self.localized(tableName: tableName), arguments)
+        return String.init(format: self.localized(), arguments: arguments)
     }
 }

@@ -64,6 +64,8 @@ class ViewController: UIViewController {
     private func counterIncrement(_ sender: UIButton) {
         pressedCounter += 1
         counterButton.setTitle("DemoVC.Button.Counter".localized(arguments: ["counter_value" : pressedCounter]), for: .normal)
+        
+        print("DemoVC.Text.Counter".localizedPlural(arguments: pressedCounter))
     }
     
     @IBAction
