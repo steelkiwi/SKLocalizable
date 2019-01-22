@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  SKLocalizable
+
+  Created by Viktor Olesenko on 22.01.19.
+  
+*/
+
+"Filename" = "Localizable";
+
+// Simple string section
+
+"String.Simple"                 = "Simple";
+"String.Parameterized.One"      = "$(value)";
+"String.Parameterized.Multiple" = "$(value_1),$(value_2)";
+
+// UIComponents
+
+"Label.Title"           = "Label";
+"Button.Title"          = "Button";
+"TextField.Placeholder" = "TextField";
+"UIViewContr.Title"     = "UIViewController";
+"UITabBarItem.Title"    = "UITabBarItem";
+"UIBarButtonItem.Title" = "UIBarButtonItem";
+
+"Custom.Text" = "Custom";
