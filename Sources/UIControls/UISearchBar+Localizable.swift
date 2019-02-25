@@ -1,13 +1,13 @@
 //
-//  UILabel+Localizable.swift
+//  UISearchBar+Localizable.swift
 //  SKLocalizable
 //
-//  Created by Viktor Olesenko on 03.10.18.
+//  Created by Artem Zinuk on 25.02.19.
 //
 
 import UIKit
 
-extension UILabel {
+extension UISearchBar {
     
     // localizationKey overrided just for IBInspectable
     @IBInspectable
@@ -18,7 +18,7 @@ extension UILabel {
     
     open override func localize() {
         DispatchQueue.main.async {
-            self.text = self.localizationKey?.localized(tableName: self.localizationFile)
+            self.placeholder = self.localizationKey?.localized(tableName: self.localizationFile)
         }
     }
 }

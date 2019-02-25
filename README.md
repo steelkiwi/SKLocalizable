@@ -219,6 +219,7 @@ There exist components that are already localized:
 - UIViewController - `title`
 - UITabBarItem - `title`
 - UIBarButtonItem - `title`
+- UISearchBar - `placeholder`
 
 All mentioned components implement required method `localize` in which they set localized text to corresponding property in a required way. 
 
