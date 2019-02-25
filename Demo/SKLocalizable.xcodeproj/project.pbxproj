@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230D08C422241484000CB10B /* UISearchBar+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D08C322241484000CB10B /* UISearchBar+Localizable.swift */; };
 		7703680A21650A6A00643F19 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7703680921650A6A00643F19 /* Localizable.swift */; };
 		7703680C21650AA000643F19 /* Bunle+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7703680B21650AA000643F19 /* Bunle+Localizable.swift */; };
 		7703680E21650AEB00643F19 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7703680D21650AEB00643F19 /* String+Localizable.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230D08C322241484000CB10B /* UISearchBar+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Localizable.swift"; sourceTree = "<group>"; };
 		7703680921650A6A00643F19 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		7703680B21650AA000643F19 /* Bunle+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bunle+Localizable.swift"; sourceTree = "<group>"; };
 		7703680D21650AEB00643F19 /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		7703681321650BA500643F19 /* UIControls */ = {
 			isa = PBXGroup;
 			children = (
+				230D08C322241484000CB10B /* UISearchBar+Localizable.swift */,
 				7703681121650B8600643F19 /* UILabel+Localizable.swift */,
 				7703681421650BCC00643F19 /* UIButton+Localizable.swift */,
 				7703681621650BDE00643F19 /* UITextField+Localizable.swift */,
@@ -186,6 +189,7 @@
 			files = (
 				7703681721650BDE00643F19 /* UITextField+Localizable.swift in Sources */,
 				7715427F21621C2D00A66003 /* ViewController.swift in Sources */,
+				230D08C422241484000CB10B /* UISearchBar+Localizable.swift in Sources */,
 				7715429721628B5A00A66003 /* Language.swift in Sources */,
 				7703681521650BCC00643F19 /* UIButton+Localizable.swift in Sources */,
 				7703680A21650A6A00643F19 /* Localizable.swift in Sources */,
