@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		230D08C422241484000CB10B /* UISearchBar+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D08C322241484000CB10B /* UISearchBar+Localizable.swift */; };
+		230D08C6222436D4000CB10B /* UITabBarItem+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230D08C5222436D3000CB10B /* UITabBarItem+Localizable.swift */; };
 		7703680A21650A6A00643F19 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7703680921650A6A00643F19 /* Localizable.swift */; };
 		7703680C21650AA000643F19 /* Bunle+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7703680B21650AA000643F19 /* Bunle+Localizable.swift */; };
 		7703680E21650AEB00643F19 /* String+Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7703680D21650AEB00643F19 /* String+Localizable.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		230D08C322241484000CB10B /* UISearchBar+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Localizable.swift"; sourceTree = "<group>"; };
+		230D08C5222436D3000CB10B /* UITabBarItem+Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBarItem+Localizable.swift"; sourceTree = "<group>"; };
 		7703680921650A6A00643F19 /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		7703680B21650AA000643F19 /* Bunle+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bunle+Localizable.swift"; sourceTree = "<group>"; };
 		7703680D21650AEB00643F19 /* String+Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localizable.swift"; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		7703681321650BA500643F19 /* UIControls */ = {
 			isa = PBXGroup;
 			children = (
+				230D08C5222436D3000CB10B /* UITabBarItem+Localizable.swift */,
 				230D08C322241484000CB10B /* UISearchBar+Localizable.swift */,
 				7703681121650B8600643F19 /* UILabel+Localizable.swift */,
 				7703681421650BCC00643F19 /* UIButton+Localizable.swift */,
@@ -198,6 +201,7 @@
 				7715427D21621C2D00A66003 /* AppDelegate.swift in Sources */,
 				77B2E9D8218B2ACF00078218 /* NSObject+Localizable.swift in Sources */,
 				7703680E21650AEB00643F19 /* String+Localizable.swift in Sources */,
+				230D08C6222436D4000CB10B /* UITabBarItem+Localizable.swift in Sources */,
 				7703681221650B8600643F19 /* UILabel+Localizable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
