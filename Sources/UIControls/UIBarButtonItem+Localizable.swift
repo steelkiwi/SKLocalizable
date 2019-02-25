@@ -17,6 +17,8 @@ extension UIBarButtonItem {
     }
     
     open override func localize() {
-        self.title = localizationKey?.localized(tableName: self.localizationFile)
+        DispatchQueue.main.async {
+            self.title = self.localizationKey?.localized(tableName: self.localizationFile)
+        }
     }
 }
