@@ -18,9 +18,7 @@ extension UIButton {
     
     open override func localize() {
         // Setting directly in textLabel first to avoid text change animation
-        DispatchQueue.main.async {
-            self.titleLabel?.text = self.localizationKey?.localized(tableName: self.localizationFile)
-            self.setTitle(self.localizationKey?.localized(tableName: self.localizationFile), for: .normal)
-        }
+        self.titleLabel?.text = self.localizationKey?.localized(tableName: self.localizationFile)
+        self.setTitle(self.localizationKey?.localized(tableName: self.localizationFile), for: .normal)
     }
 }

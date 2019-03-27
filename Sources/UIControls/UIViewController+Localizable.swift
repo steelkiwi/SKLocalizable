@@ -17,8 +17,6 @@ extension UIViewController {
     }
 
     open override func localize() {
-        DispatchQueue.main.async {
-            self.title = self.localizationKey?.localized(tableName: self.localizationFile)
-        }
+        self.title = self.localizationKey?.localized(tableName: self.localizationFile)
     }
 }

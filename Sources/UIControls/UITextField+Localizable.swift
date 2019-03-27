@@ -17,8 +17,6 @@ extension UITextField {
     }
     
     open override func localize() {
-        DispatchQueue.main.async {
-            self.placeholder = self.localizationKey?.localized(tableName: self.localizationFile)
-        }
+        self.placeholder = self.localizationKey?.localized(tableName: self.localizationFile)
     }
 }

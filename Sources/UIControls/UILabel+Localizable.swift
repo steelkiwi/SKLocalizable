@@ -17,8 +17,6 @@ extension UILabel {
     }
     
     open override func localize() {
-        DispatchQueue.main.async {
-            self.text = self.localizationKey?.localized(tableName: self.localizationFile)
-        }
+        self.text = self.localizationKey?.localized(tableName: self.localizationFile)
     }
 }
