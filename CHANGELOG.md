@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 #### 1.x Releases
 - `1.0.x` Releases - [1.0.1](#101) | [1.0.2](#102) | [1.0.3](#103) | [1.0.4](#104) | [1.0.5](#105)
 
+## [1.0.6](https://github.com/steelkiwi/SKLocalizable/releases/tag/1.0.6)
+Released on 2019-03-28
+
+#### Removed
+- Removed Main Dispatch Queue call for setters - caused wrong setting order and blinks in tableView
+
 
 ## [1.0.5](https://github.com/steelkiwi/SKLocalizable/releases/tag/1.0.5)
 Released on 2019-02-25
