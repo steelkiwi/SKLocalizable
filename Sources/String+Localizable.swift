@@ -26,7 +26,7 @@ public extension String {
             
             // Check if any parameters was passed
             guard let arguments = arguments else {
-                assertionFailure("Localized value requires arguments")
+                print("Localization: Localized value requires arguments")
                 return localizedValue
             }
             
@@ -34,13 +34,13 @@ public extension String {
                 
                 // Check if required parameter was passed
                 guard arguments.keys.contains(key) else {
-                    assertionFailure("Arguments doesn't contain required key '\(key)'")
+                    print("Localization: Arguments doesn't contain required key '\(key)'")
                     continue
                 }
                 
                 // Nil values aren't supported
                 guard let value = arguments[key] else {
-                    assertionFailure("Nil value passed for key '\(key)'")
+                    print("Localization: Nil value passed for key '\(key)'")
                     continue
                 }
                 
