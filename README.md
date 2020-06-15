@@ -15,11 +15,7 @@ pod 'SKLocalizable', :git => "https://github.com/steelkiwi/SKLocalizable.git"
 
 ### 1.2 Swift Package Manager
 
-```swift
-dependencies: [
-    .package(url: "https://github.com/steelkiwi/SKLocalizable.git", from: "1.0.1")
-]
-```
+Will be available later
 
 ### 1.3 Manually
 
@@ -51,6 +47,8 @@ Just copy `Sources` Folder to your Project
  *
  * 5. Parameters in strings should be named using format:
  *      $(ParameterNameKey) - it will be automatically replaced with value from passed dict while localization
+ *      Avoid using parameters, wrapped in parameters syntax
+ *      Example: $($(parameter)) - this won't be handled correctly
  *
  * 6. Localize plural numbers in Localizable.stringsdict
  *      How to use plural localization - https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPInternational/StringsdictFileFormat/StringsdictFileFormat.html
@@ -279,11 +277,11 @@ It happens when module wasn't imported automatically. Just add `import SKLocaliz
 
 - **How I can localize another native or mine custom component, except mentioned in #3.1?**   
 Please check item #3.2.  
-If you localized native component, we will be very grateful if you make a Pull Request to <olesenko@steelkiwi.com> with your add-on
+If you have localized native component, not available in #3.1 list, we will be very grateful if you make a Pull Request to <olesenko@steelkiwi.com> with your add-on
 
 - **I want to localize several properties of component. Do you have default solution?**  
-It's a pretty difficult thing to handle automatically, so we don't.  
-Use notification `.languageChanged` and implement this case manually
+It's a pretty complex thing to handle automatically, so we don't.  
+You can use notification `.languageChanged` and implement this case manually
 
 
 ## License

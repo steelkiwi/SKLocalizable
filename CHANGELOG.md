@@ -3,7 +3,18 @@ All notable changes to this project will be documented in this file.
 `SKLocalizable ` adheres to [Semantic Versioning](https://semver.org/).
 
 #### 1.x Releases
-- `1.0.x` Releases - [1.0.1](#101) | [1.0.2](#102) | [1.0.3](#103) | [1.0.4](#104) | [1.0.5](#105)
+- `1.0.x` Releases - [1.0.1](#101) | [1.0.2](#102) | [1.0.3](#103) | [1.0.4](#104) | [1.0.5](#105) | [1.0.6](#106) | [1.0.7](#107)
+
+## [1.0.7](https://github.com/steelkiwi/SKLocalizable/releases/tag/1.0.7)
+Released on 2020-06.16
+
+#### Added
+- Unit tests for multiple params
+
+#### Updated
+- Key-detection: updated regex for parameters
+- Key-detection: replaced `assertionFailure` with `print`
+
 
 ## [1.0.6](https://github.com/steelkiwi/SKLocalizable/releases/tag/1.0.6)
 Released on 2019-03-28
@@ -60,5 +71,6 @@ Released on 2018-11-01.
 Released on 2018-10-05.
 
 #### Added
-- Initial release of Alamofire.
-  - Added by [Viktor Olesenko](https://github.com/OlesenkoViktor).
+- Initial release
+
+<sub>Created by [Viktor Olesenko](https://github.com/OlesenkoViktor)</sub>
