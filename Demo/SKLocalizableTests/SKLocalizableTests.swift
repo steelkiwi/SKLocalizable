@@ -83,4 +83,33 @@ class SKLocalizableTests: XCTestCase {
         let expectedValue = "Multiple \(value)"
         XCTAssertEqual(expectedValue, "String.Plural".localizedPlural(arguments: value))
     }
+    
+    // MARK: - Parameters
+    
+    func testParametersZero() {
+        let parameters = "Test.Parameters.Zero".localized().parametersKeys
+        
+        XCTAssertEqual(parameters.count, 0)
+    }
+    
+    func testParametersOne() {
+        let parameters = "Test.Parameters.One".localized().parametersKeys
+        
+        XCTAssertEqual(parameters.count, 1)
+        XCTAssertEqual(parameters, ["0"])
+    }
+    
+    func testParametersTwo() {
+        let parameters = "Test.Parameters.Two".localized().parametersKeys
+        
+        XCTAssertEqual(parameters.count, 2)
+        XCTAssertEqual(parameters, ["0", "1"])
+    }
+    
+    func testParametersMany() {
+        let parameters = "Test.Parameters.4+".localized().parametersKeys
+        
+        XCTAssertGreaterThanOrEqual(parameters.count, 3)
+        XCTAssert(Set(["0", "1", "2"]).isSubset(of: Set(parameters)))
+    }
 }
