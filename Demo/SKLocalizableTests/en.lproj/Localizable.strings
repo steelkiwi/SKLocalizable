@@ -24,3 +24,10 @@
 "UIBarButtonItem.Title" = "UIBarButtonItem";
 
 "Custom.Text" = "Custom";
+
+// Parameters
+
+"Test.Parameters.Zero"  = "Some string without parameters $ $() $( $) () (test) $(re asd par";
+"Test.Parameters.One"   = "Some string with one parameter $ $() $( $) () $(0) $(re asd par";
+"Test.Parameters.Two"   = "Some string $(0) two parameters $ $() $( $) () $(1) $(re asd par";
+"Test.Parameters.4+"    = "agsd jasj  $(0) bas $(1) gafa sdgh$(2) sdakh k$(3)$(4)";
