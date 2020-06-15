@@ -22,7 +22,8 @@ public extension String {
         var localizedValue = NSLocalizedString("\(self)", tableName: tableName, bundle: bundle, comment: "") // Wrapped self into string for localization export support
         
         // Check if value contains parameters
-        if let keysToReplace = keys(from: localizedValue) {
+        let parametersKeys = localizedValue.parametersKeys
+        if parametersKeys.isEmpty == false {
             
             // Check if any parameters was passed
             guard let arguments = arguments else {
@@ -30,7 +31,7 @@ public extension String {
                 return localizedValue
             }
             
-            for key in keysToReplace {
+            for key in parametersKeys {
                 
                 // Check if required parameter was passed
                 guard arguments.keys.contains(key) else {
@@ -54,23 +55,23 @@ public extension String {
         return localizedValue
     }
     
-    private func keys(from string: String) -> Array<String>? {
-        var foundKeys: Array<String>?
+    var parametersKeys: Array<String> {
+        var foundKeys: Array<String> = []
         
         let pattern = "\\$\\([\\S][^\\$\\)]*\\)" // \$\([\S][^\$\)]*\)
         let regex = try! NSRegularExpression.init(pattern: pattern)
         
-        regex.matches(in: string, range: NSRange.init(location: 0, length: string.count)).forEach { (keyRange) in
-            let wrappedKey = (string as NSString).substring(with: keyRange.range)
-            
-            let startIndex = wrappedKey.index(wrappedKey.startIndex, offsetBy: 2) // Drop "$("
-            let endIndex   = wrappedKey.index(wrappedKey.endIndex, offsetBy: -1) // Drop ")"
-            
-            let key = wrappedKey[startIndex ..< endIndex]
-            
-            if foundKeys == nil { foundKeys = [] }
-            
-            foundKeys?.append(String(key))
+        regex
+            .matches(in: self, range: NSRange.init(location: 0, length: self.count))
+            .forEach { (keyRange) in
+                let wrappedKey = (self as NSString).substring(with: keyRange.range)
+                
+                let startIndex = wrappedKey.index(wrappedKey.startIndex, offsetBy: 2) // Drop "$("
+                let endIndex   = wrappedKey.index(wrappedKey.endIndex, offsetBy: -1) // Drop ")"
+                
+                let key = wrappedKey[startIndex ..< endIndex]
+                
+                foundKeys.append(String(key))
         }
         
         return foundKeys
